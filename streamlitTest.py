@@ -8,8 +8,8 @@ from string import capwords
 
 Name = st.text_input('Which student are you looking for?')
 
-wb = openpyxl.load_workbook(r'D:\Python_Projects\TrBrittneyInvoice\studentCost.xlsx', data_only=True)
-janInvoiceWB = openpyxl.load_workbook(r'D:\Python_Projects\TrBrittneyInvoice\InvoiceList_Jan2023.xlsx')
+wb = openpyxl.load_workbook(r'studentCost.xlsx', data_only=True)
+janInvoiceWB = openpyxl.load_workbook(r'InvoiceList_Jan2023.xlsx')
 
 
 def findStudent(excelWB, studentName):
