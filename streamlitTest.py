@@ -15,8 +15,8 @@ gc = gspread.service_account(filename=cred_file)
 database = gc.open('studentData')
 invoiceData = gc.open('InvoiceList_March2023')
 
-st.info('Data is loaded from local Database')
-st.info('Click "Fetch Data" to update the Database')
+st.info('Data is loaded from local Database. Click "Fetch Data" to update the Database')
+
 with open('studentData.json') as json_file:
     allStData = json.load(json_file)
 
